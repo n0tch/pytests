@@ -3,6 +3,8 @@
 Repositorio para envio de códigos que eu encontrei na internet e modifiquei ou códigos que eu mesmo fiz.
 Os códigos armazenados aqui serão sempre codigos em Python.
 
+###### Rápida explicação do conteúdo de cada pasta
+
 1. Criptografador
 
   Sistema desktop na qual criptografa palavras com as seguintes tecnicas:
@@ -25,3 +27,7 @@ Os códigos armazenados aqui serão sempre codigos em Python.
 
   Tutorial visto no canal do [Sentdex](https://www.youtube.com/user/sentdex) onde é ensinado a manipulação da 
   biblioteca pygame.
+
+4. Email
+  
+  Script simples para o envio de email pelo terminal de uma conta de qualquer email para uma conta de qualquer       email.
