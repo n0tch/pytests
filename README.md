@@ -31,3 +31,7 @@ Os códigos armazenados aqui serão sempre codigos em Python.
 4. Email
   
   Script simples para o envio de email pelo terminal de uma conta de qualquer email para uma conta de qualquer       email.
+
+5. URI Scrapy
+  
+  Script para fazer o download dos problemas que foram aceitos em sua conta do [uri jugde online](https://www.urionlinejudge.com.br), utilizando como principais bibliotecas o selenium e wget.
