@@ -46,12 +46,15 @@ time.sleep(3)
 
 print("Coletando urls dos problemas...")
 #loop para percorrer os problemas aceitos e guardar as url's que conterão as url's de download
-for pagina in range(int(limite)-1):
+for pagina in range(1,int(limite)+1):
+
     p = firefox.find_elements_by_class_name('semi-wide')
     #time.sleep(3)
     for i in p:
         link = i.find_element_by_link_text("Accepted").get_attribute("href")
         links.append(link)
+    if(pagina == int(limite)):
+	break
     firefox.get(firefox.find_element_by_xpath("//a[text()='Próximo']").get_attribute("href"))
 print("done.")
 print("Coletando url de download...")
@@ -71,7 +74,6 @@ if not os.path.exists(os.getcwd()+"/problemas"):
 
 print("Realizando os downloads...")
 for arq in file_link:
-    print(arq + " -> " + file_link[arq])
     wget.download(file_link[arq], os.getcwd() + "/problemas/"+arq)
 
 print("done.")
